@@ -1,118 +1,79 @@
-# MERN Blog Application
+[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg)](https://classroom.github.com/online_ide?assignment_repo_id=19865419&assignment_repo_type=AssignmentRepo)
+# MERN Stack Integration Assignment
 
-## Project Overview
+This assignment focuses on building a full-stack MERN (MongoDB, Express.js, React.js, Node.js) application that demonstrates seamless integration between front-end and back-end components.
 
-This is a full-stack blog application built with the MERN stack (MongoDB, Express.js, React.js, Node.js). It allows users to register, log in, create, edit, and delete blog posts, as well as categorize, search, and filter posts. The app features user authentication, protected routes, pagination, search, filter, and a responsive UI with dark mode.
+## Assignment Overview
 
----
+You will build a blog application with the following features:
+1. RESTful API with Express.js and MongoDB
+2. React front-end with component architecture
+3. Full CRUD functionality for blog posts
+4. User authentication and authorization
+5. Advanced features like image uploads and comments
 
-## Setup Instructions
+## Project Structure
 
-### 1. Clone the Repository
-
-```sh
-git clone <your-repo-url>
-cd <your-repo-folder>
+```
+mern-blog/
+├── client/                 # React front-end
+│   ├── public/             # Static files
+│   ├── src/                # React source code
+│   │   ├── components/     # Reusable components
+│   │   ├── pages/          # Page components
+│   │   ├── hooks/          # Custom React hooks
+│   │   ├── services/       # API services
+│   │   ├── context/        # React context providers
+│   │   └── App.jsx         # Main application component
+│   └── package.json        # Client dependencies
+├── server/                 # Express.js back-end
+│   ├── config/             # Configuration files
+│   ├── controllers/        # Route controllers
+│   ├── models/             # Mongoose models
+│   ├── routes/             # API routes
+│   ├── middleware/         # Custom middleware
+│   ├── utils/              # Utility functions
+│   ├── server.js           # Main server file
+│   └── package.json        # Server dependencies
+└── README.md               # Project documentation
 ```
 
-### 2. Install Dependencies
+## Getting Started
 
-#### Server
+1. Accept the GitHub Classroom assignment invitation
+2. Clone your personal repository that was created by GitHub Classroom
+3. Follow the setup instructions in the `Week4-Assignment.md` file
+4. Complete the tasks outlined in the assignment
 
-```sh
-cd server
-npm install
-```
+## Files Included
 
-#### Client
+- `Week4-Assignment.md`: Detailed assignment instructions
+- Starter code for both client and server:
+  - Basic project structure
+  - Configuration files
+  - Sample models and components
 
-```sh
-cd ../client
-npm install
-```
+## Requirements
 
-### 3. Environment Variables
+- Node.js (v18 or higher)
+- MongoDB (local installation or Atlas account)
+- npm or yarn
+- Git
 
-- Copy `.env.example` to `.env` in both `server/` and `client/` folders.
-- Update the values as needed (e.g., MongoDB URI, JWT secret).
+## Submission
 
-### 4. Start the Application
+Your work will be automatically submitted when you push to your GitHub Classroom repository. Make sure to:
 
-#### Start the Backend
+1. Complete both the client and server portions of the application
+2. Implement all required API endpoints
+3. Create the necessary React components and hooks
+4. Document your API and setup process in the README.md
+5. Include screenshots of your working application
 
-```sh
-cd server
-npm run dev
-```
+## Resources
 
-#### Start the Frontend
-
-```sh
-cd ../client
-npm run dev
-```
-
-- The backend will run on `http://localhost:5000`
-- The frontend will run on `http://localhost:5173` (or as specified by Vite)
-
----
-
-## API Documentation
-
-### Auth
-
-- `POST /api/auth/register` — Register a new user
-- `POST /api/auth/login` — Login and receive a JWT token
-
-### Posts
-
-- `GET /api/posts` — Get all posts (supports pagination, search, filter)
-- `GET /api/posts/:id` — Get a single post by ID
-- `POST /api/posts` — Create a new post (auth required)
-- `PUT /api/posts/:id` — Update a post (auth required)
-- `DELETE /api/posts/:id` — Delete a post (auth required)
-
-### Categories
-
-- `GET /api/categories` — Get all categories
-- `POST /api/categories` — Create a new category
-
----
-
-## Features Implemented
-
-- User registration and login (JWT authentication)
-- Create, read, update, and delete blog posts
-- Create and list categories
-- Pagination, search, and filter for posts
-- Responsive UI with dark mode toggle
-- Protected routes for authenticated users
-- Error handling and user feedback
-- Clean code organization (controllers, models, routes, middleware, hooks, services, context)
-
----
-
-## Screenshots
-
-### Home Page
-
-![Home Page](Images/home-page.png)
-
-### Create Post
-
-![Create Post](Images/create-post.png)
-
-### Dark Mode
-
-![Dark Mode](Images/dark-mode.png)
-
-### login
-
-![login](Images/login-page.png)
-
-### register page
-
-![register](Images/reg-page.png)
-
-
----
+- [MongoDB Documentation](https://docs.mongodb.com/)
+- [Express.js Documentation](https://expressjs.com/)
+- [React Documentation](https://react.dev/)
+- [Node.js Documentation](https://nodejs.org/en/docs/)
+- [Mongoose Documentation](https://mongoosejs.com/docs/) 
