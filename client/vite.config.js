@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react(), tailwindcss()],
   server: {
     proxy: {
-      '/api': 'https://week-5-web-sockets-assignment-barmakyy.onrender.com',
+      '/api': 'http://localhost:5000',
     },
   },
 });
